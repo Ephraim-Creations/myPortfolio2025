@@ -67,21 +67,23 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 
 .logo-image {
-  height: 40px; /* Adjust to match your header height */
+  height: 50px; /* Adjust to match your header height */
   width: auto;
   transition: transform 0.3s ease;
 }
 
 .logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: var(--primary-color);
   transition: color 0.3s ease;
+  font-family:Marck Script;
 }
+
 
 /* Hover Effects */
 .logo-container:hover .logo-image {
@@ -91,10 +93,10 @@ body {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .logo-image {
-      height: 32px; /* Slightly smaller on mobile */
+      height: 30px; /* Slightly smaller on mobile */
   }
   .logo-text {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
   }
 }
 
@@ -278,19 +280,25 @@ input:checked + .slider:before {
     transform: translateX(20px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .mobile-controls {
         display: flex;
     }
-    
+
     .theme-toggle {
         display: none;
     }
-    
+
     .hamburger {
         margin-left: 0;
+        display: block;
+    }
+
+    .desktop-nav {
+        display: none;
     }
 }
+
 
 /* Hero Section */
 .hero {
@@ -866,6 +874,7 @@ input:checked + .slider:before {
 }
 
 .faq-answer {
+    color: var(--primary-color);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
@@ -1334,6 +1343,10 @@ input:checked + .slider:before {
     padding: 20px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+.footer-bottom p{
+ transition: transform 0.2s ease-in-out, background-color 0.3s;
+ animation: pulse 2s infinite;
+}
 
 .social-icons {
     margin-top: 20px;
@@ -1345,6 +1358,10 @@ input:checked + .slider:before {
     color: var(--footer-text);
     font-size: 1.2rem;
     transition: var(--transition);
+    animation: 
+      popIn 0.5s forwards,
+      tagBounce 2s infinite ease-in-out;
+    animation-delay: var(--delay);
 }
 
 .social-icons a:hover {
