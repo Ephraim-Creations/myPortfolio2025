@@ -110,7 +110,7 @@ const planData = {
       'Members page',
       'Sell online(product display)',
       '5 free revisions',
-      '10 blog (if needed))',
+      '10 blog (if needed)',
       '10 marketing posters',
       'Premium SEO',
       'WhatsApp buttons',
